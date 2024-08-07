@@ -1,0 +1,6 @@
+pandas
+python-dotenv
+numpy
+streamlit
+streamlit-option-menu
+msal
