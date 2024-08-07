@@ -20,4 +20,7 @@ AUTHORITY = f"https://login.microsoftonline.com/{TENANT_ID}"
 SCOPES = ["User.Read"]
 
 if not all([CLIENT_ID, TENANT_ID, CLIENT_SECRET]):
+    print(CLIENT_ID)
+    print(TENANT_ID)
+    print(CLIENT_SECRET)
     raise ValueError("One or more environment variables have not been configured correctly.")
