@@ -3,6 +3,8 @@ import os
 
 load_dotenv()
 
+print(os.getenv('PROD_AZURE_CLIENT_ID'))
+
 environment = os.getenv('ENVIRONMENT', 'dev').lower()
 
 if environment == 'prod':
