@@ -2,6 +2,21 @@ import streamlit as st
 from msal import ConfidentialClientApplication
 import settings
 
+if settings.CLIENT_ID is None:
+    'No hay CLIENT_ID'
+else:
+    print(settings.CLIENT_ID)
+    
+if settings.TENANT_ID is None:
+    'No hay TENANT_ID'
+else:
+    print(settings.TENANT_ID)
+    
+if settings.CLIENT_SECRET is None:
+    'No hay CLIENT_SECRET'
+else:
+    print(settings.CLIENT_SECRET)
+
 #--- // ---#
 # Crear un cliente de autenticación utilizando MSAL (Microsoft Authentication Library)
 # con la configuración proporcionada (ID de cliente, autoridad, secreto de cliente)
