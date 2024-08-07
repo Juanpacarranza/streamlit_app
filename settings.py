@@ -20,7 +20,19 @@ AUTHORITY = f"https://login.microsoftonline.com/{TENANT_ID}"
 SCOPES = ["User.Read"]
 
 if not all([CLIENT_ID, TENANT_ID, CLIENT_SECRET]):
-    print(CLIENT_ID)
-    print(TENANT_ID)
-    print(CLIENT_SECRET)
+    if CLIENT_ID is None:
+        'No hay CLIENT_ID'
+    else:
+        print(CLIENT_ID)
+        
+    if TENANT_ID is None:
+        'No hay TENANT_ID'
+    else:
+        print(TENANT_ID)
+        
+    if CLIENT_SECRET is None:
+        'No hay CLIENT_SECRET'
+    else:
+        print(CLIENT_SECRET)
+        
     raise ValueError("One or more environment variables have not been configured correctly.")
