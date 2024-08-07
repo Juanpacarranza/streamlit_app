@@ -3,7 +3,7 @@ import os
 
 load_dotenv()
 
-print(os.getenv('PROD_AZURE_CLIENT_ID'))
+print('hola mundo!!')
 
 environment = os.getenv('ENVIRONMENT', 'dev').lower()
 
